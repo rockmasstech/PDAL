@@ -553,10 +553,10 @@ MetadataNode SpatialReference::toMetadata() const
     root.add("vertical", getVertical());
     root.add("isgeographic", isGeographic());
     root.add("isgeocentric", isGeocentric());
-    root.add("proj4", getProj4());
+    root.add("proj4", "" /*getProj4()*/);
     root.add("prettywkt", prettyWkt(getHorizontal()));
     root.add("wkt", getHorizontal());
-    root.add("json", getPROJJSON());
+    root.add("json", "" /*getPROJJSON()*/);
     root.add("compoundwkt", getWKT());
     root.add("prettycompoundwkt", prettyWkt(m_wkt));
 
